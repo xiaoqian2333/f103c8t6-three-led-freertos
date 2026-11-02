@@ -1,0 +1,18 @@
+set(CMAKE_SYSTEM_NAME Generic)
+set(CMAKE_SYSTEM_VERSION 1)
+set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
+
+find_program(ARM_GCC arm-none-eabi-gcc REQUIRED)
+find_program(ARM_GXX arm-none-eabi-g++ REQUIRED)
+find_program(ARM_AR arm-none-eabi-ar REQUIRED)
+find_program(ARM_OBJCOPY arm-none-eabi-objcopy REQUIRED)
+find_program(ARM_OBJDUMP arm-none-eabi-objdump REQUIRED)
+find_program(ARM_SIZE arm-none-eabi-size REQUIRED)
+
+set(CMAKE_C_COMPILER ${ARM_GCC})
+set(CMAKE_CXX_COMPILER ${ARM_GXX})
+set(CMAKE_ASM_COMPILER ${ARM_GCC})
+set(CMAKE_AR ${ARM_AR})
+set(CMAKE_OBJCOPY ${ARM_OBJCOPY})
+set(CMAKE_OBJDUMP ${ARM_OBJDUMP})
+set(SIZE ${ARM_SIZE})
