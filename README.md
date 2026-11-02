@@ -36,3 +36,5 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *timer)
     }
 }
 ```
+
+演示视频位于 `videos/` 目录。
